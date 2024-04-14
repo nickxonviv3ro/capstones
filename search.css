@@ -1,0 +1,193 @@
+/* Custom CSS */
+body {
+  font-family: 'Manuale', sans-serif; /* Change the font family to Manuale for the entire document */
+  background: #d1d5db;
+}
+
+/* Custom Classes */
+.height {
+  height: 100vh;
+}
+
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+  padding-left: 7px;
+}
+
+.left-pan i {
+  padding-left: 10px;
+}
+
+.form-input {
+  height: 55px;
+  text-indent: 33px;
+  border-radius: 10px;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+/* Adjustments for Custom Content */
+.custom-content {
+  margin-top: 50px; /* Adjust this value to move the search bar higher */
+  position: relative; /* Set position to relative */
+}
+
+/* Image Styles */
+.image-container {
+  display: flex;
+  justify-content: center; /* Center align the image horizontally */
+  margin-top: 50px; /* Adjust margin top as needed */
+}
+
+.image {
+  width: auto; /* Set width to auto to maintain aspect ratio */
+  max-width: 100%; /* Set maximum width to 100% of the viewport */
+  max-height: calc(100vh - 160px); /* Set maximum height to 100% of viewport height minus the combined height of the header and footer */
+  margin-bottom: 50px; /* Add margin to the bottom to prevent overlap with the footer */
+}
+
+
+
+.image {
+  width: auto; /* Maintain aspect ratio */
+  max-width: calc(100% - 50px); /* Set maximum width to 100% of the viewport width minus some padding */
+  max-height: calc(100vh - 160px); /* Set maximum height to 100% of viewport height minus the combined height of the header, footer, and some padding */
+  position: fixed; /* Fix the image position */
+  top: calc(100px + 100px); /* Position below the search input with increased margin */
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Adjust the position to center the image */
+}
+
+
+
+
+.footer {
+  background-color: #191970; /* Set the background color for the footer */
+  color: white; /* Set text color to white */
+  padding: 10px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Align text to the center */
+  position: fixed; /* Fix the footer at the bottom */
+  width: 100%; /* Set width to 100% */
+  left: 0; /* Set left edge to 0 */
+  bottom: 0; /* Align at the bottom */
+}
+
+
+/* Existing CSS for Sidebar and Content */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hide the sidebar */
+  bottom: 0;
+  width: 250px;
+  padding-top: 56px; /* Adjust based on your header height */
+  background-color: #191970; /* Set the custom color for the sidebar */
+  color: white; /* Set text color to white */
+  transition: left 0.3s ease;
+}
+
+.content {
+  margin-left: 0; /* Adjust based on sidebar width */
+  transition: margin-left 0.3s ease;
+  text-align: center; /* Center align the text */
+}
+
+.sidebar.opened {
+  left: 0; /* Show the sidebar when opened */
+}
+
+.content.shifted {
+  margin-left: 250px; /* Shift content when sidebar is opened */
+}
+
+.sidebar-toggler {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  color: white; /* Change the color to white */
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.sidebar-toggler:focus,
+.sidebar-toggler:hover {
+  background-color: transparent !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.header-brand {
+  font-size: 1.5rem;
+  color: #fff; /* Set text color to white */
+  margin-bottom: 5px; /* Adjust the margin-bottom to create space between the brand and the text */
+  pointer-events: none; /* Disable pointer events */
+}
+
+.header-text {
+  font-size: 1rem; /* Increase font size */
+  color: #fff; /* Set text color to white */
+  margin-top: -10px; /* Adjust the margin-top to increase the spacing */
+  font-weight: bold; /* Make the text bold */
+}
+
+.custom-navbar {
+  background-color: #191970; /* Set the custom color for the navbar */
+}
+
+.nav-link {
+  color: white; /* Set text color to white */
+}
+
+.custom-content {
+  text-align: center;
+}
+
+.custom-content h1 {
+  font-size: 2rem;
+}
+
+.custom-content p {
+  font-size: 1.2rem;
+}
+
+.custom-content button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-content button:hover {
+  background-color: #0056b3;
+}
+
+.custom-content {
+  text-align: center;
+  margin-top: 150px; /* Adjust margin-top to move the content lower */
+}

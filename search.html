@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waray-Waray Dictionary</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Manuale Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manuale:wght@400;700&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link href="search.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Play Games</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Instagram</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Facebook</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">X</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Sidebar Toggler Button -->
+<button class="btn btn-primary sidebar-toggler" id="sidebarToggleBtn">
+  <i class="fas fa-bars"></i>
+</button>
+
+<!-- Page Content -->
+<div class="content" id="content">
+  <!-- Header Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand header-brand" href="#">Waray-Waray Dictionary</a>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <div class="container">
+        <span class="navbar-text header-text" style="font-size: 20px; margin-top: -25px;">Empowering Children's Language Development And Tourist</span>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-7 mb-10 custom-content">
+    <div class="d-flex flex-column align-items-center position-relative">
+      <!-- Search Input Field -->
+      <div class="input-group search-input" style="position: relative; top: -100px;">
+        <input type="text" class="form-control" placeholder="&#xf130; Search for...">
+        <div class="input-group-append">
+          <!-- Search Button -->
+          <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <img src="image12.jpg" alt="Image 12" class="image">
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">   
+        <p>© 2024 Your Website. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<script>
+  document.getElementById('sidebarToggleBtn').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('opened');
+    document.getElementById('content').classList.toggle('shifted');
+  });
+</script>
+</body>
+</html>
