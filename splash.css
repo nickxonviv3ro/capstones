@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    overflow: auto;
+    overflow: hidden;
 }
 
 header {
@@ -89,77 +90,69 @@ header h2 {
 }
 
 main {
-    position: relative;
-}
-
-.background-image {
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.search-container {
-    position: absolute;
-    top: calc(38% + 120px); /* Adjust the offset according to header height */
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    z-index: 999;
+    position: relative;
+    padding-top: 80px; /* Add padding top to make space for header */
+}
+/* Centering the main element */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Set the height of the main element to fill the viewport */
 }
 
-.search-input {
-    width: 800px;
-    padding: 10px;
+/* Targeting the text paragraphs */
+/* Centering the main element */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Set the height of the main element to fill the viewport */
+}
+
+/* Centering the main element */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Set the height of the main element to fill the viewport */
+}
+
+/* Targeting the text paragraphs */
+main p {
+    font-size: 40px;
+    color: #ffffff; /* White text color */
+    margin-top: -200px; /* Adjust margin-top as needed */
+}
+
+/* Targeting the second paragraph */
+main .second-paragraph {
+    font-size: 36px;
+    color: #ffffff; /* White text color */
+    margin-top: 10px; /* Adjust margin-top as needed */
+}
+
+/* Targeting the button */
+main button {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
+    padding: 10px 20px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 10px) center; /* Adjust to position the icon */
-}
-
-.search-input::placeholder {
-    color: #888; /* Adjust placeholder color */
-}
-
-.search-button {
-    background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
+    margin-top: 80px; /* Adjust margin-top as needed */
 }
 
-.search-button i {
-    color: #666; /* Adjust icon color */
-}
-
-.search-button:hover i {
-    color: #444; /* Adjust icon color on hover */
-}
-
-.carousel-container {
-    position: absolute;
-    top: calc(50% + 200px); /* Adjust the offset according to header height and search bar height */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 998;
-    width: 900px; /* Adjust the width */
-}
-
-.carousel-inner {
-    max-width: 900px; /* Set the maximum width of the carousel */
-    margin: auto; /* Center the carousel horizontally */
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
+/* Hover state for the button */
+main button:hover {
+    background-color: #1100ff;
 }
 
 footer {
@@ -192,3 +185,11 @@ footer div i {
 footer p {
     padding-right: 15px;
 }
+.background-image {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
